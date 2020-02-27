@@ -78,7 +78,33 @@ public class SimpleList
 		int foundIndex = -1;
 		for(int counter = 0 ; counter < this.count ; counter++) 					//Go over the count elements in the array and if the element is detected, change foundIndex to index
 			if(this.list[counter]==toSearch) 
+			{
 				foundIndex = counter;
+				break;
+			}
 		return foundIndex;															//Return foundIndex's default -1 if the entire array doesn't contain the element
+	}
+
+	public void append(int toAppend)	//append Method : appends an element to the end of the occupied elements in the array
+	{
+		if(this.list.length == this.count)											//Checks if array size is equal to the maximum size of the array
+		{
+			int newSize = this.list.length + ((this.list.length * 50)/ 100);		//Determine the new size of the array to be the original size and 50% of the size
+			int newArray[] = new int[newSize];										//Create a new array of the new determined size
+			for(int counter = 0 ; counter < this.count ; counter++)					//Copy the contents of the array into the new bigger array
+				newArray[counter] = this.list[counter];
+			this.list = newArray;													//Replace the old array with the new bigger array
+		}
+		this.list[this.count++] = toAppend;											//Add the element to the end of the occupied list and append count
+	}
+
+	public int first()					//first Method : returns the first element of the list
+	{
+		return this.list[0];														//Returns the element at index 0 on the list
+	}
+
+	public int size()					//size Method : returns the size of the array
+	{
+		return this.list.length;													//Returns the length of the list
 	}
 }
