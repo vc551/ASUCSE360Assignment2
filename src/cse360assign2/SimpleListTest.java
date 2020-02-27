@@ -1,3 +1,15 @@
+/*
+ * Name		  :	Vikramjit Singh
+ * ASU ID	  :	1215398340
+ * Assignment :	2
+ * Description: This class tests the SimpleList class defined
+ * 				for assignment 2. It checks the methods of the
+ * 				class by declaring a new instance of the list
+ * 				every time and then trying the various methods
+ * 				on them. The outputs are then compared with the
+ * 				expected outputs.
+ */
+
 package cse360assign2;
 
 import static org.junit.jupiter.api.Assertions.*;

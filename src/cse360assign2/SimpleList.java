@@ -1,16 +1,19 @@
 /*
  * Name		  :	Vikramjit Singh
  * ASU ID	  :	1215398340
- * Assignment :	1
+ * Assignment :	2
  * Description: This class defines the SimpleList data type for Assignment 2.
  * 				Private variables include an array of integers called list
  * 				and an integer count which keeps track of the number of
  * 				variables stored into the array. The constructor sets the list
- * 				to be empty and count to be 0. The methods add and remove are
- * 				used to manipulate the array and count. The method count and
+ * 				to be empty and count to be 0. The methods add, append, and remove are
+ * 				used to manipulate the array and count. Both the add and append 
+ * 				methods can also change the size of the array. The method count and
  * 				toString provide access to the count and all the variables
  * 				in the array respectively. The method search returns the index
  * 				of the element if present in the list and -1 if it isn't.
+ * 				The first method returns the first element of the list. The size method
+ * 				returns the current size of the list array.
  */
 
 package cse360assign2;
